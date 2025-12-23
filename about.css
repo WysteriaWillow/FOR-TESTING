@@ -16,8 +16,7 @@
 }
 /* /* Hero section */
 .hero {
-    background-image: url('ASSETS/sprinkles.png'), linear-gradient(#bd2c72b4, #69505c);
-    
+    background-image: url('ASSETS/sprinkles.png'), linear-gradient(#bd2c72b4, #69505c); 
     background-size: cover;
     background-position: center;
     height: auto;
@@ -51,7 +50,7 @@
 .about {
     background:  url('ASSETS/bigABTbanner.png') no-repeat center top / cover;
     padding-top: 13vw;
-    background-color: #fff !important;
+    background-color: #f5dae4 !important;
 }
 
 /* Typography & Content */
@@ -101,7 +100,7 @@
 .mission-promise {
     padding-bottom: 5rem !important;
     padding: 0 5rem;
-    background-color: #fff !important;
+    background-color: #f5dae4 !important;
 
 }
 
@@ -251,9 +250,10 @@
     }
 
     .image-wrapper {
+        background-color: #69505c;
         padding: 1.2rem !important;
         max-width: 80%;
-        margin: 0 auto 20px auto;
+        margin: 0 auto;
     }
 
     .custom-rounded {

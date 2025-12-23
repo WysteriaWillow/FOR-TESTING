@@ -292,6 +292,7 @@
 }
 
 @media (max-width: 720px) {
+    
     .cupcake-container {
         max-width: 280px;
         top: -80px;

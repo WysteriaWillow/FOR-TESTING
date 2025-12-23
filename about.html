@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Toronto Cupcake</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lemonada:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navv">
+        <div class="container">
+            <a class="logo-btn btn btn-light" href="index.html">
+                <img src="ASSETS/LOGO.png" alt="logo" style="width:30px;">
+            </a>
+            <div class="d-flex align-items-center gap-2 order-lg-last">
+                <button class="btn btn-light cart-btn flex-shrink-0">
+                    <i class="fa fa-shopping-cart"></i>
+                </button>
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#mainNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse justify-content-center" id="mainNav">
+                <ul class="navbar-nav my-3 my-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="product.html">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="moreDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">More</a>
+                        <ul class="dropdown-menu" aria-labelledby="moreDropdown">
+                            <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+                            <li><a class="dropdown-item" href="community.html">Community</a></li>
+                            <li><a class="dropdown-item" href="event.html">Events</a></li>
+                            <li><a class="dropdown-item" href="location.html">Location</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Toronto Cupcake</h1>
+            <p>Delicious cupcakes made with love in the heart of Toronto</p>
+        </div>
+    </section>
+
+    <section class="about">
+    <div class="container-fluid">
+        <div class="row g-5">
+            <div class="col-lg-7 abt">
+                <h2>About Us</h2>
+                <p>
+                    Toronto Cupcake is a family-owned bakery dedicated to creating the most delicious and creative
+                    cupcakes in Toronto. Founded in 2010, we've been serving the community with fresh, high-quality
+                    ingredients and unique flavors that capture the essence of our vibrant city.
+                </p>
+            </div>
+
+            <div class="col-lg-5 text-center">
+                <div class="michelle-card p-3">
+                    <img src="ASSETS/michelle.webp" 
+                         alt="Michelle Harrison"
+                         class="img-fluid rounded-4 shadow-sm mb-3 michelle-toggle-img" 
+                         onclick="showMoreMichelle()"
+                         style="cursor: pointer;">
+
+                    <p id="click-hint" class="fw-bold mt-2" style="color: var(--accent);">
+                        Want to know more about Michelle?
+                    </p>
+                    <p id="click-subtext" class="small text-muted">Click the photo to see more!</p>
+
+                    <div id="michelle-content" class="michelle-text-container" style="display: none; opacity: 0;">
+                        <h3 class="h4 mt-3">About Michelle</h3>
+                        <p class="small text-muted">..........................</p>
+                        <p>
+                            Toronto Cupcake was created by Michelle Harrison to pursue her love of baking.
+                            Inspired by her mother, Michelle opened Toronto Cupcake in August 2010
+                            as one of Canada's first gourmet cupcakeries.
+                        </p>
+                        <p class="small text-muted">..........................</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <section class="mission-promise">
+        <div class="container-fluid">
+            <div class="row align-items-center mb-5">
+                 <div class="col-md-6 order-2 order-md-1 mb-4 mb-md-0 d-flex justify-content-center align-items-center">
+                    <div class="image-wrapper">
+                        <img src="ASSETS/mission.png" alt="mission logo" class="img-fluid custom-rounded shadow">
+                    </div>
+                </div>
+                <div class="col-md-6 order-1 order-md-2">
+                    <h2 class="section-title">Our Mission</h2>
+                    <p class="section-text">
+                        Our mission is to bring joy to every bite, whether it's a classic vanilla cupcake or an
+                        adventurous flavor like maple bacon or matcha green tea. We use only the finest ingredients,
+                        from locally sourced produce to premium chocolates and spices.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2 class="section-title">Our Promise</h2>
+                    <p class="section-text">
+                        We commit to delivering a sweet treat that brightens your day, crafted with the same love and
+                        care that started our journey in 2010.
+                    </p>
+                </div>
+                <div class="col-md-6 mb-4 mb-md-0 d-flex justify-content-center align-items-center">
+                    <div class="image-wrapper">
+                        <img src="ASSETS/promise.png" alt="promise logo" class="img-fluid custom-rounded shadow">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="section-4" class="footer py-5">
+        <div class="container">
+            <div class="row g-4 align-items-center text-center text-md-start">
+                <div class="col-md-6">
+                    <h5 class="fw-bold">Visit Us</h5>
+                    <p class="mb-1">123 Cupcake Lane, Toronto, ON M1A 2B3</p>
+                    <p class="mb-0 fw-bold">(416) 555-0123</p>
+                </div>
+                <div class="col-md-6 text-md-end  socials">
+                    <div class="d-flex justify-content-center justify-content-md-end gap-4">
+                        <a href="#" class="text-dark"><i class="fab fa-facebook fa-2x"></i></a>
+                        <a href="#" class="text-dark"><i class="fab fa-instagram fa-2x"></i></a>
+                        <a href="#" class="text-dark"><i class="fab fa-twitter fa-2x"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function showMoreMichelle() {
+    const content = document.getElementById('michelle-content');
+    const hint = document.getElementById('click-hint');
+    const subtext = document.getElementById('click-subtext');
+
+    if (content.style.display === "none" || content.style.display === "") {
+        // Show Bio, Hide Hints
+        hint.style.display = "none";
+        subtext.style.display = "none";
+        content.style.display = "block";
+        
+        // Brief timeout to allow display:block to register before changing opacity
+        setTimeout(() => {
+            content.style.opacity = "1";
+        }, 10);
+    } else {
+        // Hide Bio, Show Hints
+        content.style.opacity = "0";
+        setTimeout(() => {
+            content.style.display = "none";
+            hint.style.display = "block";
+            subtext.style.display = "block";
+        }, 500);
+    }
+}
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
